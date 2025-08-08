@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #121419;
+  color: hsl(0, 38%, 94%);
+}
+
+.marquee {
+  font-size: larger;
+  color: #00d8ff;
+
+}
+
+.marquee h1{
+   font-size: x-large;
+   color: #22a664;
+   text-align: center;
+}
+
+.typing-header {
+  width: 100ch;
+  max-width: 100ch; /* 👈 set character limit properly */
+  animation: typing 6s steps(75, end) forwards, blink 0.7s step-end infinite;
+  
+  overflow: hidden;
+  border-right: 2px solid orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9933;
+  margin: 20px auto;
+  text-align: center;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+header {
+  background: #1c1e1f;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  color: rgb(129, 89, 223);
+  font-style: normal;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: xx-large;
+}
+
+nav a {
+  color: #00d8ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  background: #030507;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-left h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-left span {
+  color: #34c6df;
+}
+
+.hero-left p {
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 25px;
+
+  margin-top: 30px;
+
+  flex-wrap: wrap;
+}
+
+
+.hero-buttons .btn {
+  padding: 14px 28px;
+  background: #00d8ff;
+  font-size: 18px;
+  color: #111;
+  border: none;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+
+}
+
+
+.hero-buttons .btn:hover {
+  background-color: #04b3d1;
+}
+
+
+.hero-buttons .outline {
+  background: transparent;
+  border: 2px solid #00d8ff;
+  color: #00d8ff;
+}
+
+.hero-right img {
+  max-width: 300px;
+  border-radius: 50%;
+  width: 350px;
+  height: auto;
+  border: 5px solid #00d8ff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.about,
+.skills,
+.projects {
+  padding: 40px 20px;
+  font-size: 20px;
+  color: aqua;
+
+}
+
+.about ul {
+  list-style: none;
+  margin-top: 20px;
+}
+.about h3{
+  color: aqua;
+}
+
+.about li {
+  margin-bottom: 8px;
+}
+
+.hobbies span {
+  margin-right: 15px;
+  background: #444;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.skill-icons {
+  display: flex;
+  gap: 30px;
+  font-size: 40px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.skill-icons i {
+  color: #00d8ff;
+}
+
+.projects ul {
+  margin-top: 20px;
+}
+
+.projects li {
+  margin-bottom: 10px;
+}
+
+.contact {
+  padding: 80px 20px;
+  background-color: #40d1ee;
+  font-size: large;
+  color: #122986;
+
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #06145f;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-submit {
+  padding: 12px;
+  font-size: 20px;
+  background-color: #25d07b;
+  border: none;
+  border-radius: 8px;
+  color: hsl(258, 81%, 36%);
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #163fd2;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  font-size: 14px;
+}
